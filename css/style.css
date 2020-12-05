@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.news__block{
+    position: fixed; 
+    top: 50%; 
+    right: 100%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease ;
+    -ms-transition: all .5s ease ;
+    -o-transition: all .5s ease ;
+    transition: all .5s ease ;
+}
+.news__block.active{
+    right: calc(100% - 400px);
+}
+.news__block-inner_icon{
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 80px;
+    border: 1px solid #000;
+    padding: 5px;
+    line-height: 40px;
+    bottom: 100%;
+    left: 100%;
+    text-decoration: none;
+    color: #000;
+}
+.list__count{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+.news__block-inner_icon_img{
+    width: 100%;
+    vertical-align: middle;
+}
+.news__url{
+    display: flex;
+    align-items: center;
+}
+.news__list{
+    padding: 0;
+    margin: 0;
+}
+.news__list_item{
+    padding: 15px;
+    list-style: none;
+
+}
+
+.news__url{
+    color: #000;
+    text-decoration: none;
+}
+.news__time{
+    font-size: 25px;
+    font-weight: 600;
+    color: #58585a;
+}
+.news__date{
+    font-size: 13px;
+    font-weight: 600;
+}
+.news__ready{
+    display: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ff0000;
+    background: #7fffd4;
+}
+.news__ready.active{
+    display: block;
+}
+.news__date-time{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.news__info{
+    padding-left: 25px;
+}
+.news__title{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+    text-align: right;
+}
+.news__author-more{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.news__author{
+    display: block;
+    font-size: 10px;
+    text-align: right;
+    color: #ff0000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.news__more{
+    font-size: 14px;
+    text-transform: capitalize  ;
+}
+@media all and (min-width: 1024px){
+    .news__block{
+        width: 400px;
+    }
+}
