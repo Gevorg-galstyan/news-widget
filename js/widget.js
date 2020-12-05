@@ -38,7 +38,7 @@ let data = {
 
 const newsBlock = document.createElement("div");
 const style = document.createElement("link");
-style.href = "css/style.css";
+style.href = "https://github.com/Gevorg-galstyan/news-widget/blob/master/css/style.css";
 style.rel = "stylesheet";
 
 const newsListBlock = document.createElement("ul");
